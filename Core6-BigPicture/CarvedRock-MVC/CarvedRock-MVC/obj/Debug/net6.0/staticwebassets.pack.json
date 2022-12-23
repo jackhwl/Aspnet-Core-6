@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Jack\\Projects\\AspNetCore\\Core6-BigPicture\\CarvedRock-MVC\\CarvedRock-MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CarvedRock-MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CarvedRock-MVC.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Jack\\Projects\\AspNetCore\\Core6-BigPicture\\CarvedRock-MVC\\CarvedRock-MVC\\wwwroot\\Images\\carved-rock-logo.png",
+      "PackagePath": "staticwebassets\\Images\\carved-rock-logo.png"
+    },
+    {
+      "Id": "C:\\Jack\\Projects\\AspNetCore\\Core6-BigPicture\\CarvedRock-MVC\\CarvedRock-MVC\\wwwroot\\Images\\shutterstock_222721876.jpg",
+      "PackagePath": "staticwebassets\\Images\\shutterstock_222721876.jpg"
+    },
+    {
+      "Id": "C:\\Jack\\Projects\\AspNetCore\\Core6-BigPicture\\CarvedRock-MVC\\CarvedRock-MVC\\wwwroot\\Images\\shutterstock_441989509.jpg",
+      "PackagePath": "staticwebassets\\Images\\shutterstock_441989509.jpg"
+    },
+    {
+      "Id": "C:\\Jack\\Projects\\AspNetCore\\Core6-BigPicture\\CarvedRock-MVC\\CarvedRock-MVC\\wwwroot\\Images\\shutterstock_48040747.jpg",
+      "PackagePath": "staticwebassets\\Images\\shutterstock_48040747.jpg"
+    },
+    {
+      "Id": "C:\\Jack\\Projects\\AspNetCore\\Core6-BigPicture\\CarvedRock-MVC\\CarvedRock-MVC\\wwwroot\\Images\\shutterstock_495259978.jpg",
+      "PackagePath": "staticwebassets\\Images\\shutterstock_495259978.jpg"
+    },
+    {
+      "Id": "C:\\Jack\\Projects\\AspNetCore\\Core6-BigPicture\\CarvedRock-MVC\\CarvedRock-MVC\\wwwroot\\Images\\shutterstock_6170527.jpg",
+      "PackagePath": "staticwebassets\\Images\\shutterstock_6170527.jpg"
+    },
+    {
+      "Id": "C:\\Jack\\Projects\\AspNetCore\\Core6-BigPicture\\CarvedRock-MVC\\CarvedRock-MVC\\wwwroot\\Images\\shutterstock_66842440.jpg",
+      "PackagePath": "staticwebassets\\Images\\shutterstock_66842440.jpg"
+    },
+    {
+      "Id": "C:\\Jack\\Projects\\AspNetCore\\Core6-BigPicture\\CarvedRock-MVC\\CarvedRock-MVC\\wwwroot\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Jack\\Projects\\AspNetCore\\Core6-BigPicture\\CarvedRock-MVC\\CarvedRock-MVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Jack\\Projects\\AspNetCore\\Core6-BigPicture\\CarvedRock-MVC\\CarvedRock-MVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.CarvedRock-MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.CarvedRock-MVC.props",
+      "PackagePath": "build\\CarvedRock-MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.CarvedRock-MVC.props",
+      "PackagePath": "buildMultiTargeting\\CarvedRock-MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.CarvedRock-MVC.props",
+      "PackagePath": "buildTransitive\\CarvedRock-MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
