@@ -3,3 +3,4 @@
 * Demo: Creating the Domain Project
 * Demo: Creating the Applicatoin Project
 * Using MediatR and AutoMapper
+* Demo: Writing the Application Logic in the Request Handler
