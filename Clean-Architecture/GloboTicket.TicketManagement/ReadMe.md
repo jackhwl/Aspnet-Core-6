@@ -5,3 +5,4 @@
 * Using MediatR and AutoMapper
 * Demo: Writing the Application Logic in the Request Handler
 * Demo: Adding CQRS into the Application Architecture
+* Demo: Organizing the Code Using Feature
