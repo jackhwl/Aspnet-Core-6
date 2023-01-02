@@ -7,3 +7,4 @@
 * Demo: Adding CQRS into the Application Architecture
 * Demo: Organizing the Code Using Feature
 * Demo: Using Commands to Create a New Entity
+* Demo: Adding Validation and Custom Exceptions
