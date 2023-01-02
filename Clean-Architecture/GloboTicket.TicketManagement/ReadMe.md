@@ -8,3 +8,5 @@
 * Demo: Organizing the Code Using Feature
 * Demo: Using Commands to Create a New Entity
 * Demo: Adding Validation and Custom Exceptions
+## Section 5: Creating the Infrastructure Project
+* Demo: Adding Data Persistence with Entity Framework Core
