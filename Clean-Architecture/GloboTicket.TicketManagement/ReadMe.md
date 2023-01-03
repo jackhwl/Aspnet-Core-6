@@ -12,3 +12,4 @@
 * Demo: Adding Data Persistence with Entity Framework Core
 * Demo: Adding Entity Framework Core
 * Demo: Implementing the Persistance Layer
+* Demo: Adding Support for Mailing from the Infrastructure
