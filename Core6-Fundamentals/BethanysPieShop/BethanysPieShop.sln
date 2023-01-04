@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShop", "BethanysPieShop.csproj", "{2F11EE0C-E902-4B1F-B082-01FD68C2B0E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieShopTests", "..\BethanysPieShopTests\BethanysPieShopTests.csproj", "{E6CA4AE6-E57E-4E5E-94D8-0C81AFEC0F2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopTests", "..\BethanysPieShopTests\BethanysPieShopTests.csproj", "{E6CA4AE6-E57E-4E5E-94D8-0C81AFEC0F2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
