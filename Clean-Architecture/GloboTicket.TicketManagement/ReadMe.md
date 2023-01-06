@@ -16,3 +16,4 @@
 ## Section 6: Adding an API Using ASP.NET Core
 * Demo: Adding the API Project
 * Demo: Adding Controller Code Using MediatR
+* Demo: Returning View Models and Responses
