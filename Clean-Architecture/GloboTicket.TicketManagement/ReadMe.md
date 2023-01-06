@@ -18,3 +18,4 @@
 * Demo: Adding Controller Code Using MediatR
 * Demo: Returning View Models and Responses
 * Demo: Addin Support for Returing a CSV File
+* Demo: Adding Support for Swagger
