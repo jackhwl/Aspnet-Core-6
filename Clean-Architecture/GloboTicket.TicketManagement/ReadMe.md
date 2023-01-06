@@ -15,3 +15,4 @@
 * Demo: Adding Support for Mailing from the Infrastructure
 ## Section 6: Adding an API Using ASP.NET Core
 * Demo: Adding the API Project
+* Demo: Adding Controller Code Using MediatR
