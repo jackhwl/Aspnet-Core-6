@@ -22,3 +22,4 @@
 ## Section 7: Testing the Application Code
 * Demo: Creating Unit Tests for the Application Code
 * Demo: Writing Integration Tests for Infrastructure
+* Demo: Writing Integration Tests for the API Controllers
