@@ -19,3 +19,5 @@
 * Demo: Returning View Models and Responses
 * Demo: Addin Support for Returing a CSV File
 * Demo: Adding Support for Swagger
+## Section 7: Testing the Application Code
+* Demo: Creating Unit Tests for the Application Code

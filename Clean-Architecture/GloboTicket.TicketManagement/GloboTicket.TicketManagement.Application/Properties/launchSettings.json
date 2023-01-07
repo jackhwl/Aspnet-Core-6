@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "GloboTicket.TicketManagement.Application": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:63728;http://localhost:63730"
+    }
+  }
+}
