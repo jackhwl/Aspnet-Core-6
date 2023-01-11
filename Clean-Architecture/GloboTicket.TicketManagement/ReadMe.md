@@ -24,3 +24,5 @@
 * Demo: Writing Integration Tests for Infrastructure
 * Demo: Writing Integration Tests for the API Controllers
 ## Section 8: Adding the Blazor UI
+## Section 9: Improving on the Application’s Behavior
+* Demo: Handling Errors
