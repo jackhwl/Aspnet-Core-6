@@ -26,6 +26,10 @@ using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var services = builder.Services;
+
+services.AddTransient<IWeatherForecaster, RandomWeatherForecaster>();
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages(options =>
 {

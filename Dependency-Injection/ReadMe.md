@@ -2,3 +2,4 @@
 * Why Use Dependency Injection?
 * Coding to Interfaces
 * Inverting Control with Constructor Injection
+* Registering Services
