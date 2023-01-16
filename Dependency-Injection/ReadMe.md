@@ -10,3 +10,4 @@
 * Transient Services
 * Singleton Services
 * Scoped Services
+* Scope Validation
