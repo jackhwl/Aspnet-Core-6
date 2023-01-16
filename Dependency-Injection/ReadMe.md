@@ -9,3 +9,4 @@
 * Accessing Configuration from the D.I. Container
 * Transient Services
 * Singleton Services
+* Scoped Services
