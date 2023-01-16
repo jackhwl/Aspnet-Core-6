@@ -7,3 +7,4 @@
 * Advantages of Dependency Injection
 ## Section 3: The Microsoft Dependency Injection Container
 * Accessing Configuration from the D.I. Container
+* Transient Services
