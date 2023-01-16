@@ -1,3 +1,7 @@
+using Microsoft.AspNetCore.Http.Features;
+using Microsoft.Extensions.Options;
+using TennisBookings.Configuration;
+
 namespace TennisBookings.Tests.Pages;
 
 public class IndexTests
@@ -5,7 +9,7 @@ public class IndexTests
 	[Fact]
 	public async Task ReturnsExpectedViewModel_WhenWeatherIsSun()
 	{
-		var sut = new IndexModel(new SunForecaster(), NullLogger<IndexModel>.Instance);
+		var sut = new IndexModel(new SunForecaster(), NullLogger<IndexModel>.Instance, new EnabledConfig());
 
 		await sut.OnGet();
 
@@ -15,13 +19,24 @@ public class IndexTests
 	[Fact]
 	public async Task ReturnsExpectedViewModel_WhenWeatherIsRain()
 	{
-		var sut = new IndexModel(new RainForecaster(), NullLogger<IndexModel>.Instance);
+		var sut = new IndexModel(new RainForecaster(), NullLogger<IndexModel>.Instance, new EnabledConfig());
 
 		await sut.OnGet();
 
 		Assert.Contains("We're sorry but it's raining here.", sut.WeatherDescription);
 	}
+	private class EnabledConfig : IOptionsSnapshot<FeaturesConfiguration>
+	{
+		public FeaturesConfiguration Value => new FeaturesConfiguration
+		{
+			EnableWeatherForecast = true
+		};
 
+		public FeaturesConfiguration Get(string name)
+		{
+			throw new NotImplementedException();
+		}
+	}
 	private class SunForecaster : IWeatherForecaster
 	{
 		public Task<WeatherResult> GetCurrentWeatherAsync(string city)
