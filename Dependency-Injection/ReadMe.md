@@ -12,3 +12,4 @@
 * Scoped Services
 * Scope Validation
 * Disposal of Services
+* Completing the Tennis Booking Registrations
