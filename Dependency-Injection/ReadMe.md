@@ -11,4 +11,4 @@
 * Singleton Services
 * Scoped Services
 * Scope Validation
-jan.dollesin@zoom.us
+* Disposal of Services
