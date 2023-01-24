@@ -13,3 +13,5 @@
 * Scope Validation
 * Disposal of Services
 * Completing the Tennis Booking Registrations
+## Section 4: Registering More Complex Service
+* Add vs. TryAdd

@@ -23,22 +23,23 @@ global using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.Sqlite;
 using TennisBookings.BackgroundService;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var services = builder.Services;
 
-services.AddTransient<IWeatherForecaster, RandomWeatherForecaster>();
-services.AddScoped<ICourtBookingService, CourtBookingService>();
-services.AddSingleton<IUtcTimeService, TimeService>();
+services.TryAddTransient<IWeatherForecaster, RandomWeatherForecaster>();
+services.TryAddScoped<ICourtBookingService, CourtBookingService>();
+services.TryAddSingleton<IUtcTimeService, TimeService>();
 
-services.AddScoped<IBookingService, BookingService>();
-services.AddScoped<ICourtService, CourtService>();
+services.TryAddScoped<IBookingService, BookingService>();
+services.TryAddScoped<ICourtService, CourtService>();
 
-services.AddScoped<ICourtBookingManager, CourtBookingManager>();
+services.TryAddScoped<ICourtBookingManager, CourtBookingManager>();
 services.Configure<BookingConfiguration>(builder.Configuration.GetSection("CourtBookings"));
-services.AddScoped<IBookingRuleProcessor, BookingRuleProcessor>();
-services.AddSingleton<INotificationService, EmailNotificationService>();
+services.TryAddScoped<IBookingRuleProcessor, BookingRuleProcessor>();
+services.TryAddSingleton<INotificationService, EmailNotificationService>();
 
 services.Configure<FeaturesConfiguration>(builder.Configuration.GetSection("Features"));
 
