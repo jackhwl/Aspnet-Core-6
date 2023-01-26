@@ -41,6 +41,8 @@ builder.Services.AddDbContext<CityInfoContext>(
     .EnableSensitiveDataLogging()
     .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 
+builder.Services.AddScoped<ICityInfoRepository, CityInfoRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
