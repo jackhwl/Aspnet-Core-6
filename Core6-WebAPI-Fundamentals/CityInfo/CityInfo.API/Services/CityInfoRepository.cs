@@ -47,16 +47,12 @@ namespace CityInfo.API.Services
 
         public async Task AddPointOfInterestForCityAsync(int cityId, PointOfInterest pointOfInterest)
         {
-            var city = await GetCityAsync(cityId, false);
-            if (city != null)
+            if (await CityExistsAsync(cityId))
             {
-                city.PointsOfInterest.Add(pointOfInterest);
+                pointOfInterest.CityId = cityId;
+                _context.PointsOfInterest.Add(pointOfInterest);
+                await _context.SaveChangesAsync();
             }
-        }
-
-        public async Task<bool> SaveChangesAsync()
-        {
-            return (await _context.SaveChangesAsync() >= 0);
         }
     }
 }

@@ -68,8 +68,6 @@ namespace CityInfo.API.Controllers
 
             await _cityInfoRepository.AddPointOfInterestForCityAsync(cityId, finalPointOfInterest);
 
-            await _cityInfoRepository.SaveChangesAsync();
-
             var createdPointOfInterestToReturn = _mapper.Map<PointOfInterestDto>(finalPointOfInterest);
 
             return CreatedAtRoute("GetPointOfInterest",
