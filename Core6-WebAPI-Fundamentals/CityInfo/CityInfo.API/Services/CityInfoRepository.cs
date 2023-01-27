@@ -51,5 +51,11 @@ namespace CityInfo.API.Services
             _context.PointsOfInterest.Add(pointOfInterest);
             await _context.SaveChangesAsync();
         }
+
+        public async Task UpdatePointOfInterestForCityAsync(PointOfInterest pointOfInterest)
+        {
+            _context.PointsOfInterest.Update(pointOfInterest);
+            await _context.SaveChangesAsync();
+        }
     }
 }
