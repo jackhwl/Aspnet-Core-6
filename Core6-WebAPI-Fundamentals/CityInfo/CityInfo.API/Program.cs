@@ -38,8 +38,9 @@ builder.Services.AddSingleton<CitiesDataStore>();
 
 builder.Services.AddDbContext<CityInfoContext>(
     dbContextOptions => dbContextOptions.UseSqlServer(builder.Configuration.GetConnectionString("CityConnection"))
-    .EnableSensitiveDataLogging()
-    .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+    //.EnableSensitiveDataLogging()
+    //.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
+);
 
 builder.Services.AddScoped<ICityInfoRepository, CityInfoRepository>();
 
