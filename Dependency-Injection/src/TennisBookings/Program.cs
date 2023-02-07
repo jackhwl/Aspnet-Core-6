@@ -41,6 +41,14 @@ services.Configure<BookingConfiguration>(builder.Configuration.GetSection("Court
 services.TryAddScoped<IBookingRuleProcessor, BookingRuleProcessor>();
 services.TryAddSingleton<INotificationService, EmailNotificationService>();
 
+services.AddSingleton<ICourtBookingRule, ClubIsOpenRule>();
+services.AddSingleton<ICourtBookingRule, MaxBookingLengthRule>();
+services.AddSingleton<ICourtBookingRule, MaxPeakTimeBookingLengthRule>();
+services.AddScoped<ICourtBookingRule, MemberBookingsMustNotOverlapRule>();
+services.AddScoped<ICourtBookingRule, MemberCourtBookingsMaxHoursPerDayRule>();
+
+services.Configure<ClubConfiguration>(builder.Configuration.GetSection("ClubSettings"));
+services.Configure<BookingConfiguration>(builder.Configuration.GetSection("CourtBookings"));
 services.Configure<FeaturesConfiguration>(builder.Configuration.GetSection("Features"));
 
 builder.Services.AddControllersWithViews();

@@ -15,3 +15,4 @@
 * Completing the Tennis Booking Registrations
 ## Section 4: Registering More Complex Service
 * Add vs. TryAdd
+* Improving Multiple Implementations of an Interface
