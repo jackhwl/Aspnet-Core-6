@@ -16,3 +16,6 @@
 ## Section 4: Registering More Complex Service
 * Add vs. TryAdd
 * Improving Multiple Implementations of an Interface
+* Improving Factories
+## Section 5: Injecting and Resolving Dependencies
+* Injecting Services into MVC Controllers (Constructor injector vs Action injection)
