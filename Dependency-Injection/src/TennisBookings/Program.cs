@@ -47,6 +47,21 @@ services.AddSingleton<ICourtBookingRule, MaxPeakTimeBookingLengthRule>();
 services.AddScoped<ICourtBookingRule, MemberBookingsMustNotOverlapRule>();
 services.AddScoped<ICourtBookingRule, MemberCourtBookingsMaxHoursPerDayRule>();
 
+//services.AddScoped<IUnavailabilityProvider, ClubClosedUnavailabilityProvider>();
+//services.AddScoped<IUnavailabilityProvider, ClubClosedUnavailabilityProvider>();
+//services.AddScoped<IUnavailabilityProvider, UpcomingHoursUnavailabilityProvider>();
+//services.AddScoped<IUnavailabilityProvider, OutsideCourtUnavailabilityProvider>();
+//services.AddScoped<IUnavailabilityProvider, CourtBookingUnavailabilityProvider>();
+
+services.TryAddEnumerable(new ServiceDescriptor[]
+{
+	ServiceDescriptor.Scoped<IUnavailabilityProvider, ClubClosedUnavailabilityProvider>(),
+	ServiceDescriptor.Scoped<IUnavailabilityProvider, ClubClosedUnavailabilityProvider>(),
+	ServiceDescriptor.Scoped<IUnavailabilityProvider, UpcomingHoursUnavailabilityProvider>(),
+	ServiceDescriptor.Scoped<IUnavailabilityProvider, OutsideCourtUnavailabilityProvider>(),
+	ServiceDescriptor.Scoped<IUnavailabilityProvider, CourtBookingUnavailabilityProvider>()
+});
+
 services.Configure<ClubConfiguration>(builder.Configuration.GetSection("ClubSettings"));
 services.Configure<BookingConfiguration>(builder.Configuration.GetSection("CourtBookings"));
 services.Configure<FeaturesConfiguration>(builder.Configuration.GetSection("Features"));
