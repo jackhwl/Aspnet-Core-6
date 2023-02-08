@@ -19,3 +19,5 @@
 * Improving Factories
 ## Section 5: Injecting and Resolving Dependencies
 * Injecting Services into MVC Controllers (Constructor injector vs Action injection)
+* Injecting Dependencies into Middleware
+* Injecting Dependencies into Factory-based Middleware 
