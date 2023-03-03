@@ -3,3 +3,4 @@
 * Demo: Adhering to URI Giodelines
 * Demo: Returning correct Status Codes
 * Demo: Handling Faults and Avoiding Exposing Implementation Details
+* Demo: Supporting XML
