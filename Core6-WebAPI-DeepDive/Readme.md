@@ -5,3 +5,5 @@
 * Demo: Handling Faults and Avoiding Exposing Implementation Details
 * Demo: Supporting XML
 * Demo: Supporting HEAD
+## Section 4: Manipulating Resources
+* Demo: Inspecting and Fixing the POST Methods
