@@ -4,3 +4,4 @@
 * Demo: Returning correct Status Codes
 * Demo: Handling Faults and Avoiding Exposing Implementation Details
 * Demo: Supporting XML
+* Demo: Supporting HEAD
