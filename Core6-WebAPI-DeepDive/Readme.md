@@ -7,3 +7,4 @@
 * Demo: Supporting HEAD
 ## Section 4: Manipulating Resources
 * Demo: Inspecting and Fixing the POST Methods
+* Demo: Creating Child Resources Together with a Parent Resource
