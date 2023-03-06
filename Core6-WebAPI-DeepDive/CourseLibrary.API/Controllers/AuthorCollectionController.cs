@@ -22,6 +22,8 @@ public class AuthorCollectionController : ControllerBase
             throw new ArgumentNullException(nameof(mapper));
     }
 
+    // 1,2,3
+    // key1=value1,key2=value2
     [HttpGet("({authorIds})", Name = "GetAuthorCollection")]
     public async Task<ActionResult<IEnumerable<AuthorForCreationDto>>> GetAuthorCollection([ModelBinder(BinderType = typeof(ArrayModelBinder))][FromRoute] IEnumerable<Guid> authorIds)
     {

@@ -10,3 +10,4 @@
 * Demo: Creating Child Resources Together with a Parent Resource
 * Demo: Creating a Collection of Resources
 * Demo: Working with Array Keys and Composite Keys
+* Demo: Inspecting a PUT Action
