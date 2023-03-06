@@ -11,3 +11,4 @@
 * Demo: Creating a Collection of Resources
 * Demo: Working with Array Keys and Composite Keys
 * Demo: Inspecting a PUT Action
+* Demo: Supporting Partial Updates with PATCH
