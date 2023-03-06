@@ -14,3 +14,4 @@
 * Demo: Supporting Partial Updates with PATCH
 * Demo: Upserting with PUT
 * Demo: Upserting with PATCH
+* Demo: Supporting OPTIONS
