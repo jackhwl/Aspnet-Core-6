@@ -12,3 +12,5 @@
 * Demo: Working with Array Keys and Composite Keys
 * Demo: Inspecting a PUT Action
 * Demo: Supporting Partial Updates with PATCH
+* Demo: Upserting with PUT
+* Demo: Upserting with PATCH
