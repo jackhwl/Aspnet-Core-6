@@ -7,3 +7,6 @@
 * - dotnet new list
 * - dotnet new isui
 * Demo - Adding a User Interface
+* Demo - Adding Users to Test With
+## Section 4: Securing Your User Authentication Processes
+* Demo - Configuring IdentityServer to Log in with The Authorization Code Flow
