@@ -5,3 +5,5 @@
 * Demo - Setting Up IdentityServer
 * - dotnet new install Duende.IdentityServer.Templates
 * - dotnet new list
+* - dotnet new isui
+* Demo - Adding a User Interface
