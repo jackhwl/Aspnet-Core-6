@@ -2,3 +2,6 @@
 ## Section 2: Getting Started with ASP.NET Core Security
 * Demo - Introducing the Demo Application
 ## Section 3: Understanding Authentication with OpenID Connect
+* Demo - Setting Up IdentityServer
+* - dotnet new install Duende.IdentityServer.Templates
+* - dotnet new list
