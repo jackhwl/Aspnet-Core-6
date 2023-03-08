@@ -18,3 +18,4 @@
 ## Section 5: Validating Data and Reporting Validation Errors
 * Demo: Validating Input With Data Annotations
 * Demo: Customizing Error Messages
+* Demo: Customizing Validation Error Responses
