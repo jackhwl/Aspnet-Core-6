@@ -13,10 +13,12 @@ internal static class StartupHelperExtensions
         builder.Services.AddControllers(configure =>
         {
             configure.ReturnHttpNotAcceptable = true;
-        }).AddNewtonsoftJson(setupAction =>
+        })
+        .AddNewtonsoftJson(setupAction =>
         {
             setupAction.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-        }).AddXmlDataContractSerializerFormatters();
+        })
+        .AddXmlDataContractSerializerFormatters();
 
         builder.Services.AddScoped<ICourseLibraryRepository, 
             CourseLibraryRepository>();

@@ -15,3 +15,5 @@
 * Demo: Upserting with PUT
 * Demo: Upserting with PATCH
 * Demo: Supporting OPTIONS
+## Section 5: Validating Data and Reporting Validation Errors
+* Demo: Validating Input With Data Annotations
