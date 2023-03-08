@@ -19,3 +19,4 @@
 * Demo: Validating Input With Data Annotations
 * Demo: Customizing Error Messages
 * Demo: Customizing Validation Error Responses
+* Demo: Validating Input when Updating a Resource with PUT
