@@ -21,3 +21,4 @@
 * Demo: Customizing Validation Error Responses
 * Demo: Validating Input when Updating a Resource with PUT
 * Demo: Class-level Input Validation with IValidatableObject
+* Demo: Class-level Input Validation with a Custom Attribute
