@@ -24,3 +24,4 @@
 * Demo: Class-level Input Validation with a Custom Attribute
 * Demo: Validating Input when Updating a Resource with PATCH
 * Demo: Returning ValidationProblems from Controller Actions
+* Demo: Validating Input When Upserting With PATCH
