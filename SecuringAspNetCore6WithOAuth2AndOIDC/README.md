@@ -13,3 +13,4 @@
 * Demo - Logging in with the Authorization Code Flow
 * Demo - Logging out of Our Web Application
 * Logging out of the Identity Provider
+* Demo - Redirecting After Logging out
