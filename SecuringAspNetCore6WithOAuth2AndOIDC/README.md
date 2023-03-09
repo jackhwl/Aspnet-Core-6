@@ -12,3 +12,4 @@
 * Demo - Configuring IdentityServer to Log in with The Authorization Code Flow
 * Demo - Logging in with the Authorization Code Flow
 * Demo - Logging out of Our Web Application
+* Logging out of the Identity Provider
