@@ -14,3 +14,4 @@
 * Demo - Logging out of Our Web Application
 * Logging out of the Identity Provider
 * Demo - Redirecting After Logging out
+* Demo - Returning Additional Claim From the UserInfo Endpoint
