@@ -28,3 +28,4 @@
 ## Section 6: Supporting Filtering and Searching
 * Demo: Filtering Collection Resources
 * Demo: Searching Through Collection Resources
+* Demo: Grouping Action Parameters Together Into One Object
