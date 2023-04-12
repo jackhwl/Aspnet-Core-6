@@ -25,3 +25,6 @@
 * Demo: Validating Input when Updating a Resource with PATCH
 * Demo: Returning ValidationProblems from Controller Actions
 * Demo: Validating Input When Upserting With PATCH
+## Section 6: Supporting Filtering and Searching
+* Demo: Filtering Collection Resources
+* Demo: Searching Through Collection Resources
