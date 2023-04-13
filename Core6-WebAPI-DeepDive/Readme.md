@@ -31,3 +31,4 @@
 * Demo: Grouping Action Parameters Together Into One Object
 ## Section 7: Supporting Paging
 * Demo: Paging Through Collection Resources
+* Demo: Returning Pagination Metadata
