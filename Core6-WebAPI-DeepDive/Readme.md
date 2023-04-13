@@ -29,3 +29,5 @@
 * Demo: Filtering Collection Resources
 * Demo: Searching Through Collection Resources
 * Demo: Grouping Action Parameters Together Into One Object
+## Section 7: Supporting Paging
+* Demo: Paging Through Collection Resources

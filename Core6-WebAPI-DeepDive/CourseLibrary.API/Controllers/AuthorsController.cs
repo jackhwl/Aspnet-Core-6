@@ -26,7 +26,7 @@ public class AuthorsController : ControllerBase
 
     [HttpGet]
     [HttpHead]
-    public async Task<ActionResult<IEnumerable<AuthorDto>>> GetAuthors(AuthorsResourceParameters authorsResourceParameters)
+    public async Task<ActionResult<IEnumerable<AuthorDto>>> GetAuthors([FromQuery] AuthorsResourceParameters authorsResourceParameters)
     { 
         // get authors from repo
         var authorsFromRepo = await _courseLibraryRepository

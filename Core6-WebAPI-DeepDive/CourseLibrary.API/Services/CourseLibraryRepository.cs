@@ -128,17 +128,17 @@ public class CourseLibraryRepository : ICourseLibraryRepository
         return await _context.Authors.ToListAsync();
     }
 
-    public async Task<IEnumerable<Author>> GetAuthorsAsync([FromQuery]AuthorsResourceParameters authorsResourceParameters)
+    public async Task<IEnumerable<Author>> GetAuthorsAsync(AuthorsResourceParameters authorsResourceParameters)
     {
         if (authorsResourceParameters== null)
         {
             throw new ArgumentNullException(nameof(authorsResourceParameters));
         }
 
-        if (string.IsNullOrWhiteSpace(authorsResourceParameters.MainCategory) && string.IsNullOrWhiteSpace(authorsResourceParameters.SearchQuery))
-        {
-            return await GetAuthorsAsync();
-        }
+        //if (string.IsNullOrWhiteSpace(authorsResourceParameters.MainCategory) && string.IsNullOrWhiteSpace(authorsResourceParameters.SearchQuery))
+        //{
+        //    return await GetAuthorsAsync();
+        //}
 
         // collection to start from
         var collection = _context.Authors as IQueryable<Author>;
@@ -155,7 +155,13 @@ public class CourseLibraryRepository : ICourseLibraryRepository
             collection = collection.Where(a => a.MainCategory.Contains(searchQuery) || a.FirstName.Contains(searchQuery) || a.LastName.Contains(searchQuery));
         }
 
-        return await collection.ToListAsync();
+        var pageSize = authorsResourceParameters.PageSize;
+        var pageNumber = authorsResourceParameters.PageNumber;
+
+        return await collection
+            .Skip(pageSize * (pageNumber - 1))
+            .Take(pageSize)
+            .ToListAsync();
     }
     
     public async Task<IEnumerable<Author>> GetAuthorsAsync(IEnumerable<Guid> authorIds)
