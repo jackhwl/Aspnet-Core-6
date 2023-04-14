@@ -37,3 +37,4 @@
 ## Section 8: Supporting Sorting
 * Demo: Creating a Property Mapping Service
 * Demo: Creating a Reusable ApplySort Method
+* Demo: Adding OrderBy Clasuses to Pagination Links
