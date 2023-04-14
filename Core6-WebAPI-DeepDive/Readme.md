@@ -36,3 +36,4 @@
 * Demo: Returning Pagination Metadata
 ## Section 8: Supporting Sorting
 * Demo: Creating a Property Mapping Service
+* Demo: Creating a Reusable ApplySort Method
