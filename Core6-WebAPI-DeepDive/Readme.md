@@ -32,3 +32,5 @@
 ## Section 7: Supporting Paging
 * Demo: Paging Through Collection Resources
 * Demo: Returning Pagination Metadata
+## Section 8: Supporting Sorting
+* Demo: Creating a Property Mapping Service
