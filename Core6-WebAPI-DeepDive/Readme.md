@@ -38,3 +38,4 @@
 * Demo: Creating a Property Mapping Service
 * Demo: Creating a Reusable ApplySort Method
 * Demo: Adding OrderBy Clasuses to Pagination Links
+* Demo: Taking Consumer Errors into Account when Sorting
