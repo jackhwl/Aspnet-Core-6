@@ -39,3 +39,5 @@
 * Demo: Creating a Reusable ApplySort Method
 * Demo: Adding OrderBy Clasuses to Pagination Links
 * Demo: Taking Consumer Errors into Account when Sorting
+## Section 9: Supporting Data Shaping
+* Demo: Creating a Reusable Extension Method to Shape Data
