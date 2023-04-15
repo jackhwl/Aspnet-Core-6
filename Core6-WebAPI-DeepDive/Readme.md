@@ -41,3 +41,4 @@
 * Demo: Taking Consumer Errors into Account when Sorting
 ## Section 9: Supporting Data Shaping
 * Demo: Creating a Reusable Extension Method to Shape Data
+* Demo: Data Shaping Single Resources
