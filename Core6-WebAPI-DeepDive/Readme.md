@@ -43,3 +43,4 @@
 * Demo: Creating a Reusable Extension Method to Shape Data
 * Demo: Data Shaping Collection Resources
 * Demo: Data Shaping Single Resources
+* Demo: Taking Consumer Errors into Account when Shaping Data

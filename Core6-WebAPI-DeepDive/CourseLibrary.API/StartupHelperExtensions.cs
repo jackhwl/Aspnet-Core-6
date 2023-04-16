@@ -47,6 +47,7 @@ internal static class StartupHelperExtensions
         }) ;
 
         builder.Services.AddTransient<IPropertyMappingService, PropertyMappingService>();
+        builder.Services.AddTransient<IPropertyCheckerService, PropertyCheckerService>();
         builder.Services.AddScoped<ICourseLibraryRepository, CourseLibraryRepository>();
 
         builder.Services.AddDbContext<CourseLibraryContext>(options =>
