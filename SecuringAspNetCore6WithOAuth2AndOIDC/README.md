@@ -15,3 +15,5 @@
 * Logging out of the Identity Provider
 * Demo - Redirecting After Logging out
 * Demo - Returning Additional Claim From the UserInfo Endpoint
+## Section 5: Working with Claims in Your Web Application
+* Demo - Claims Transformation: Manipulating the Claims Collection
