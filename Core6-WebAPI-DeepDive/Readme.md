@@ -46,3 +46,4 @@
 * Demo: Taking Consumer Errors into Account when Shaping Data
 ## Section 10: Learning and Implementing HATEOAS
 * Demo: Implementing HATEOAS Support for a Single Resource
+* Demo: Implementing HATEOAS Support After Posting
