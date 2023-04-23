@@ -48,3 +48,4 @@
 * Demo: Implementing HATEOAS Support for a Single Resource
 * Demo: Implementing HATEOAS Support After Posting
 * Demo: Implementing HATEOAS Support Collection Resource
+* Demo: Using HATEOAS for Pagination Links
