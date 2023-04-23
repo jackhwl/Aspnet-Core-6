@@ -47,3 +47,4 @@
 ## Section 10: Learning and Implementing HATEOAS
 * Demo: Implementing HATEOAS Support for a Single Resource
 * Demo: Implementing HATEOAS Support After Posting
+* Demo: Implementing HATEOAS Support Collection Resource

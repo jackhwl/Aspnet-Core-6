@@ -34,7 +34,7 @@ public class AuthorsController : ControllerBase
         _problemDetailsFactory= problemDetailsFactory ?? throw new ArgumentNullException(nameof(problemDetailsFactory));
     }
 
-    [HttpGet]
+    [HttpGet(Name = "GetAuthors")]
     [HttpHead]
     public async Task<IActionResult> GetAuthors([FromQuery] AuthorsResourceParameters authorsResourceParameters)
     { 
@@ -70,7 +70,24 @@ public class AuthorsController : ControllerBase
 
         Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationMetadata));
 
-        return Ok(_mapper.Map<IEnumerable<AuthorDto>>(authorsFromRepo).ShapeData(authorsResourceParameters.Fields));
+        // create links
+        var links = CreateLinksForAuthors(authorsResourceParameters);
+        var shapedAuthors = _mapper.Map<IEnumerable<AuthorDto>>(authorsFromRepo).ShapeData(authorsResourceParameters.Fields);
+        var shapedAuthorsWithLinks = shapedAuthors.Select(author =>
+        {
+            var authorAsDictionary = author as IDictionary<string, object?>;
+            var authorLinks = CreateLinksForAuthor((Guid)authorAsDictionary["Id"]!, null);
+            authorAsDictionary.Add("links", authorLinks);
+            return authorAsDictionary;
+        });
+
+        var linkedCollectionResource = new
+        {
+            value = shapedAuthorsWithLinks,
+            links = links
+        };
+
+        return Ok(linkedCollectionResource);
     }
 
     private string? CreateAuthorsResourceUri(AuthorsResourceParameters authorsResourceParameters, ResourceUriType type)
@@ -97,6 +114,7 @@ public class AuthorsController : ControllerBase
                     mainCategory = authorsResourceParameters.MainCategory,
                     searchQuery = authorsResourceParameters.SearchQuery
                 });
+            case ResourceUriType.Current:
             default:
                 return Url.Link("GetAuthors", new
                 {
@@ -137,6 +155,15 @@ public class AuthorsController : ControllerBase
         linkedResourceToReturn.Add("links", links);
 
         return Ok(linkedResourceToReturn);
+    }
+
+    private IEnumerable<LinkDto> CreateLinksForAuthors(AuthorsResourceParameters authorsResourceParameters)
+    {
+        var links = new List<LinkDto>();
+
+        links.Add(new(CreateAuthorsResourceUri(authorsResourceParameters, ResourceUriType.Current), "self", "GET"));
+
+        return links;
     }
 
     private IEnumerable<LinkDto> CreateLinksForAuthor(Guid authorId, string? fields)
