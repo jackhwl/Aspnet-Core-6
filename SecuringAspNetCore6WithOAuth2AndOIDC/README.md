@@ -18,3 +18,4 @@
 ## Section 5: Working with Claims in Your Web Application
 * Demo - Claims Transformation: Keeping the Original Claim Types
 * Demo - Claims Transformation: Manipulating the Claims Collection
+* Demo - Role-based Authorization: Ensuring the Role is Included
