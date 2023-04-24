@@ -25,3 +25,4 @@
 ## Section 6: Understanding Authorization with OAuth2 and OpenID Connect
 ## Section 7: Securing Your API
 * Demo - Securing Access to Your API (Part1)
+* Demo - Securing Access to Your API (Part2)
