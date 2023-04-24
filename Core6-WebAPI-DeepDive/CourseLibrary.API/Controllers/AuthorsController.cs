@@ -185,7 +185,7 @@ public class AuthorsController : ControllerBase
         return links;
     }
 
-    [HttpPost]
+    [HttpPost(Name = nameof(CreateAuthor))]
     public async Task<ActionResult<AuthorDto>> CreateAuthor(AuthorForCreationDto author)
     {
         var authorEntity = _mapper.Map<Entities.Author>(author);

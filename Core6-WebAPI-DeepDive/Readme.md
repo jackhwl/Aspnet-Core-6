@@ -49,3 +49,4 @@
 * Demo: Implementing HATEOAS Support After Posting
 * Demo: Implementing HATEOAS Support Collection Resource
 * Demo: Using HATEOAS for Pagination Links
+* Demo: Working Towards Self-discoverablility with a Root Document
