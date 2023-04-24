@@ -20,3 +20,4 @@
 * Demo - Claims Transformation: Manipulating the Claims Collection
 * Demo - Role-based Authorization: Ensuring the Role is Included
 * Demo - Role-based Authorization: Using the Role in Your Views
+* Demo - Role-based Authorization: Using the Role in Your Controllers
