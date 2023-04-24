@@ -22,3 +22,6 @@
 * Demo - Role-based Authorization: Using the Role in Your Views
 * Demo - Role-based Authorization: Using the Role in Your Controllers
 * Demo - Creating an Accesss Denied Page
+## Section 6: Understanding Authorization with OAuth2 and OpenID Connect
+## Section 7: Securing Your API
+* Demo - Securing Access to Your API (Part1)
