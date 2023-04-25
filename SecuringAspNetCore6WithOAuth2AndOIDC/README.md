@@ -26,3 +26,4 @@
 ## Section 7: Securing Your API
 * Demo - Securing Access to Your API (Part1)
 * Demo - Securing Access to Your API (Part2)
+* Demo - Passing an Access Token to Your API
