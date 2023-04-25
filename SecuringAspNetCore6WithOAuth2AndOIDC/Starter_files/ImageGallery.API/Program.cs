@@ -33,6 +33,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         { 
            ValidTypes = new[] { "at+jwt" }
         };
+        options.Events = new JwtBearerEvents
+        {
+            OnAuthenticationFailed = async ctx =>
+            {
+                var putBreakpointHere = true;
+                var exceptionMessage = ctx.Exception;
+            },
+        };
     });
 
 var app = builder.Build();

@@ -29,3 +29,4 @@
 * Demo - Passing an Access Token to Your API
 * Demo - Using Access Token Claims When Getting Resources
 * Demo - Including Identity Claims in an Access Token
+* Demo - Protecting the API When Creating a Resource (with Roles)
