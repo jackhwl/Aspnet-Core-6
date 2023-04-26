@@ -29,9 +29,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     {
         options.Authority = "https://localhost:5001";
         options.Audience = "imagegalleryapi";
-        options.TokenValidationParameters = new() 
-        { 
-           ValidTypes = new[] { "at+jwt" }
+        options.TokenValidationParameters = new()
+        {
+            NameClaimType = "given_name",
+            RoleClaimType = "role",
+            ValidTypes = new[] { "at+jwt" }
         };
         options.Events = new JwtBearerEvents
         {
