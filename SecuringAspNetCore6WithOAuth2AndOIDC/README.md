@@ -35,3 +35,4 @@
 * Demo - Using an Authorization policy (Web Client)
 * Demo - Using an Authorization policy (API)
 * Demo - Fine-grained Policies with Scopes
+* Demo - Creating Custom Requirements and Handlers
