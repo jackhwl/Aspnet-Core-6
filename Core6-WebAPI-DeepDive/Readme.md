@@ -50,5 +50,6 @@
 * Demo: Implementing HATEOAS Support Collection Resource
 * Demo: Using HATEOAS for Pagination Links
 * Demo: Working Towards Self-discoverablility with a Root Document
-** Section 11: Improving Reliability with Advanced Content Negotiation
+## Section 11: Improving Reliability with Advanced Content Negotiation
 * Demo: HATEOAS and Content Negotiation
+* Demo: Working with Vendor-specific Media Types on Output
