@@ -5,12 +5,12 @@ using Microsoft.Net.Http.Headers;
 namespace CourseLibrary.API.ActionConstraints;
 
 [AttributeUsage(AttributeTargets.All, Inherited = true, AllowMultiple = true)]
-public class RequestHeaderMathesMediaTypeAttribute : Attribute, IActionConstraint
+public class RequestHeaderMatchesMediaTypeAttribute : Attribute, IActionConstraint
 {
 	private readonly string _requestHeaderToMatch;
 	private readonly MediaTypeCollection _mediaTypes = new();
 
-    public RequestHeaderMathesMediaTypeAttribute(string requestHeaderToMatch, string mediaType, params string[] otherMediaTypes)
+    public RequestHeaderMatchesMediaTypeAttribute(string requestHeaderToMatch, string mediaType, params string[] otherMediaTypes)
 	{
 		_requestHeaderToMatch= requestHeaderToMatch ?? throw new ArgumentNullException(nameof(requestHeaderToMatch));
 

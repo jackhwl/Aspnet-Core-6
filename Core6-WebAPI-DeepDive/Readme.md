@@ -54,3 +54,4 @@
 * Demo: HATEOAS and Content Negotiation
 * Demo: Working with Vendor-specific Media Types on Output
 * Demo: Working with Vendor-specific Media Types on Input
+* Demo: Improving Resource Representation Selection with an ActionConstraint
