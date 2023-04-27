@@ -53,3 +53,4 @@
 ## Section 11: Improving Reliability with Advanced Content Negotiation
 * Demo: HATEOAS and Content Negotiation
 * Demo: Working with Vendor-specific Media Types on Output
+* Demo: Working with Vendor-specific Media Types on Input
