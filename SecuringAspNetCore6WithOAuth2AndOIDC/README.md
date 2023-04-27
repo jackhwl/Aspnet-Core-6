@@ -33,3 +33,4 @@
 ## Section 8: Authorization Policies and Access Controllers
 * Demo - Creating an Authorization Policy
 * Demo - Using an Authorization policy (Web Client)
+* Demo - Using an Authorization policy (API)
