@@ -32,3 +32,4 @@
 * Demo - Protecting the API When Creating a Resource (with Roles)
 ## Section 8: Authorization Policies and Access Controllers
 * Demo - Creating an Authorization Policy
+* Demo - Using an Authorization policy (Web Client)
