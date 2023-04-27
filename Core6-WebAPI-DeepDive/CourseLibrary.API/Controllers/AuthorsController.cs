@@ -7,6 +7,7 @@ using CourseLibrary.API.ResourceParameters;
 using CourseLibrary.API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.Net.Http.Headers;
 using System.Text.Json;
 
 namespace CourseLibrary.API.Controllers;
@@ -123,8 +124,14 @@ public class AuthorsController : ControllerBase
     }
 
     [HttpGet("{authorId}", Name = "GetAuthor")]
-    public async Task<IActionResult> GetAuthor(Guid authorId, string? fields)
+    public async Task<IActionResult> GetAuthor(Guid authorId, string? fields, [FromHeader(Name = "Accept")] string? mediaType)
     {
+        // check if the inputted media type is a valid media type
+        if (!MediaTypeHeaderValue.TryParse(mediaType, out var parsedMediaType))
+        {
+            return BadRequest(_problemDetailsFactory.CreateProblemDetails(HttpContext, statusCode: 400, detail: $"Accept header media type value is not a valid media type."));
+        }
+
         if (!_propertyCheckerService.TypeHasProperties<AuthorDto>(fields))
         {
             return BadRequest(_problemDetailsFactory.CreateProblemDetails(HttpContext,
@@ -141,14 +148,19 @@ public class AuthorsController : ControllerBase
             return NotFound();
         }
 
-        // create links
-        var links = CreateLinksForAuthor(authorId, fields);
+        if (parsedMediaType.MediaType == "application/vnd.marvin.hateoas+json")
+        {
+            // create links
+            var links = CreateLinksForAuthor(authorId, fields);
 
-        var linkedResourceToReturn = _mapper.Map<AuthorDto>(authorFromRepo).ShapeData(fields) as IDictionary<string, object?>;
+            var linkedResourceToReturn = _mapper.Map<AuthorDto>(authorFromRepo).ShapeData(fields) as IDictionary<string, object?>;
 
-        linkedResourceToReturn.Add("links", links);
+            linkedResourceToReturn.Add("links", links);
 
-        return Ok(linkedResourceToReturn);
+            return Ok(linkedResourceToReturn);
+        }
+
+        return Ok(_mapper.Map<AuthorDto>(authorFromRepo));
     }
 
     private IEnumerable<LinkDto> CreateLinksForAuthors(AuthorsResourceParameters authorsResourceParameters, bool hasNext, bool hasPrevious)
