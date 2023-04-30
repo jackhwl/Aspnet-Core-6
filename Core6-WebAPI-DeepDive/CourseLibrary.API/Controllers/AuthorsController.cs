@@ -338,7 +338,7 @@ public class AuthorsController : ControllerBase
     }
 
     [HttpPost(Name = nameof(CreateAuthorWithDateOfDeath))]
-    [RequestHeaderMatchesMediaType("Content-Type", "application/json", "application/vnd.marvin.authorforcreationwithdateofdeath+json")]
+    [RequestHeaderMatchesMediaType("Content-Type", "application/vnd.marvin.authorforcreationwithdateofdeath+json")]
     [Consumes("application/vnd.marvin.authorforcreationwithdateofdeath+json")]
     public async Task<ActionResult<AuthorDto>> CreateAuthorWithDateOfDeath(AuthorForCreationWithDateOfDeathDto author)
     {
