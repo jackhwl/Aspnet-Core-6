@@ -39,6 +39,8 @@ public static class Config
                     ClientName= "Image Gallery",
                     ClientId="imagegalleryclient",
                     AllowedGrantTypes=GrantTypes.Code,
+                    AllowOfflineAccess = true,
+                    UpdateAccessTokenClaimsOnRefresh = true,
                     AccessTokenLifetime = 120,
                     // AuthorizationCodeLifetime = ...
                     // IdentityTokenLifetime = ...

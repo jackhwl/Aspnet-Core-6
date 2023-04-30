@@ -38,3 +38,4 @@
 * Demo - Creating Custom Requirements and Handlers
 ## Section 9: Dealing with Token Expiration, Reference Tokens, and Token Revocation
 * Demo - Token Lifetimes and Expiration
+* Demo - Gaining Long-lived Access
