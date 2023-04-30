@@ -19,7 +19,8 @@ public static class Config
             {
                 new ApiResource("imagegalleryapi", "Image Gallery API", new [] { "role", "country" })
                 {
-                    Scopes = { "imagegalleryapi.fullaccess", "imagegalleryapi.read", "imagegalleryapi.write" }
+                    Scopes = { "imagegalleryapi.fullaccess", "imagegalleryapi.read", "imagegalleryapi.write" },
+                    ApiSecrets = { new Secret("apisecret".Sha256()) }
                 }
             };
 
@@ -39,6 +40,7 @@ public static class Config
                     ClientName= "Image Gallery",
                     ClientId="imagegalleryclient",
                     AllowedGrantTypes=GrantTypes.Code,
+                    AccessTokenType = AccessTokenType.Reference,
                     AllowOfflineAccess = true,
                     UpdateAccessTokenClaimsOnRefresh = true,
                     AccessTokenLifetime = 120,
