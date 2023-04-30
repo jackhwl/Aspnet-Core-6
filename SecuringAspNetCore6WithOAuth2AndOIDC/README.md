@@ -40,3 +40,4 @@
 * Demo - Token Lifetimes and Expiration
 * Demo - Gaining Long-lived Access
 * Demo - Working with Reference Tokens
+* Demo - Revoking Tokens
