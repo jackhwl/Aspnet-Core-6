@@ -45,3 +45,4 @@
 * Demo - Creating a User Database
 * Demo - Inspecting UI Interaction with IdentityServer
 * Demo - Inspecting the User Service
+* Demo - Integrating IdentityServer with a Custom User Database
