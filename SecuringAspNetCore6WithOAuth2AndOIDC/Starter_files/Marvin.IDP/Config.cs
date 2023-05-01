@@ -40,7 +40,7 @@ public static class Config
                     ClientName= "Image Gallery",
                     ClientId="imagegalleryclient",
                     AllowedGrantTypes=GrantTypes.Code,
-                    AccessTokenType = AccessTokenType.Reference,
+                    //AccessTokenType = AccessTokenType.Reference,
                     AllowOfflineAccess = true,
                     UpdateAccessTokenClaimsOnRefresh = true,
                     AccessTokenLifetime = 120,
