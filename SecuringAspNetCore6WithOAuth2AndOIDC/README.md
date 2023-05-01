@@ -41,3 +41,5 @@
 * Demo - Gaining Long-lived Access
 * Demo - Working with Reference Tokens
 * Demo - Revoking Tokens
+## Section 10: Storing Users and Credentials in a Local Database
+* Demo - Creating a User Database
