@@ -50,3 +50,4 @@
 ## Section 11: Best Practices for User Management
 * Demo - Implementing a User Registration Screen
 * Demo - Safely Storing Passwords
+* Demo - Activating an Account
