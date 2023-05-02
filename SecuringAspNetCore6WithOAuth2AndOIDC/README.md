@@ -47,3 +47,5 @@
 * Demo - Inspecting the User Service
 * Demo - Integrating IdentityServer with a Custom User Database
 * Demo - Building Your Identity with a Profile Service
+## Section 11: Best Practices for User Management
+* Demo - Implementing a User Registration Screen
