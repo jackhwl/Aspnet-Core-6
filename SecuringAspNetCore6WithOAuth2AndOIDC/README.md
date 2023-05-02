@@ -49,3 +49,4 @@
 * Demo - Building Your Identity with a Profile Service
 ## Section 11: Best Practices for User Management
 * Demo - Implementing a User Registration Screen
+* Demo - Safely Storing Passwords
