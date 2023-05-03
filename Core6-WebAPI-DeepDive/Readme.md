@@ -63,3 +63,5 @@
 * Demo: Adding Support for Generating ETags
 * Demo: Global Cache Header Configuration
 * Demo: Resource-level Cache Header Configuration
+* Demo: Dealing with Varying Response Representations
+* Demo: ETags and the Validation Model
