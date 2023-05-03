@@ -58,3 +58,4 @@
 ## Section 12: Getting Started with Caching Resources
 * Demo: Adding Cache Headers to the Response
 * Demo: Adding a Cache Store with the ResponseCaching Middleware
+* Demo: Using Cache Profiles to Apply the Same Rules to Different Resources
