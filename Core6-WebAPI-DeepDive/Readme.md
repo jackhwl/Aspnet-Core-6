@@ -57,3 +57,4 @@
 * Demo: Improving Resource Representation Selection with an ActionConstraint
 ## Section 12: Getting Started with Caching Resources
 * Demo: Adding Cache Headers to the Response
+* Demo: Adding a Cache Store with the ResponseCaching Middleware

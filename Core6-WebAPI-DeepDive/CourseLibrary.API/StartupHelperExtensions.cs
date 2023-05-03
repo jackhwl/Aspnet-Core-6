@@ -69,6 +69,8 @@ internal static class StartupHelperExtensions
         builder.Services.AddAutoMapper(
             AppDomain.CurrentDomain.GetAssemblies());
 
+        builder.Services.AddResponseCaching();
+
         return builder.Build();
     }
 
@@ -91,6 +93,8 @@ internal static class StartupHelperExtensions
                 });
             });
         }
+
+        app.UseResponseCaching();
  
         app.UseAuthorization();
 
