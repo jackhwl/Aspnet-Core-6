@@ -55,3 +55,5 @@
 * Demo: Working with Vendor-specific Media Types on Output
 * Demo: Working with Vendor-specific Media Types on Input
 * Demo: Improving Resource Representation Selection with an ActionConstraint
+## Section 12: Getting Started with Caching Resources
+* Demo: Adding Cache Headers to the Response
