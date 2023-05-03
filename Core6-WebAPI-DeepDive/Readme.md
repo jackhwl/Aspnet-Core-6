@@ -59,3 +59,5 @@
 * Demo: Adding Cache Headers to the Response
 * Demo: Adding a Cache Store with the ResponseCaching Middleware
 * Demo: Using Cache Profiles to Apply the Same Rules to Different Resources
+## Section 13: Supporting HTTP Cache for ASP.NET Core APIs
+* Demo: Adding Support for Generating ETags
