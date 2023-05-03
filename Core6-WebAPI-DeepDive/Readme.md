@@ -62,3 +62,4 @@
 ## Section 13: Supporting HTTP Cache for ASP.NET Core APIs
 * Demo: Adding Support for Generating ETags
 * Demo: Global Cache Header Configuration
+* Demo: Resource-level Cache Header Configuration
