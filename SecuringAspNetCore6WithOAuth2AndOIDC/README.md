@@ -53,3 +53,4 @@
 * Demo - Activating an Account
 ## Section 12: Integrating with Active Directory, Azure Active Directory, and Social Logins
 * Demo - Enabling Windows Authentication on IIS Express
+* Demo - Integrating Windows Authentication with IndentityServer

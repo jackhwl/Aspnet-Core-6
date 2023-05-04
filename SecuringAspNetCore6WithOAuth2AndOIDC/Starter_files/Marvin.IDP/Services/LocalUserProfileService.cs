@@ -1,4 +1,4 @@
-using Duende.IdentityServer.Extensions;
+ using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
 using System.Security.Claims;
