@@ -51,3 +51,5 @@
 * Demo - Implementing a User Registration Screen
 * Demo - Safely Storing Passwords
 * Demo - Activating an Account
+## Section 12: Integrating with Active Directory, Azure Active Directory, and Social Logins
+* Demo - Enabling Windows Authentication on IIS Express
