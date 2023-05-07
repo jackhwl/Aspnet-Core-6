@@ -67,4 +67,14 @@ public class EmployeeFactoryTests
         // Assert
         Assert.Equal(2500, employee.Salary, 0);
     }
+
+    [Fact]
+    public void CreateEmployee_IsExternalIsTrue_ReturnTypeMustBeExternalEmployee()
+    {
+        var factory = new EmployeeFactory();
+
+        var employee = factory.CreateEmployee("Kevin", "Dockx", "Marvin", true);
+
+        Assert.IsType<ExternalEmployee>(employee);
+    }
 }
