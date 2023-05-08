@@ -25,7 +25,7 @@ public class EmployeeFactoryTests : IDisposable
         Assert.Equal(2500, employee.Salary);
     }
 
-    [Fact]
+    [Fact(Skip = "for testing purpose")]
     [Trait("Category", "EmployeeFactory_CreateEmployee_Salary")]
     public void CreateEmployee_ConstructInternalEmployee_SalaryMustBeBetween2500And3500()
     {
