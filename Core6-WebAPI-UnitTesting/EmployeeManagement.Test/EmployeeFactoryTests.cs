@@ -18,6 +18,7 @@ public class EmployeeFactoryTests : IDisposable
     }
 
     [Fact]
+    [Trait("Category", "EmployeeFactory_CreateEmployee_Salary")]
     public void CreateEmloyee_ConstructInternalEmployee_SalaryMustBe2500()
     {
         var employee = (InternalEmployee) _employeeFactory.CreateEmployee("Kevin", "Dockx");
@@ -25,6 +26,7 @@ public class EmployeeFactoryTests : IDisposable
     }
 
     [Fact]
+    [Trait("Category", "EmployeeFactory_CreateEmployee_Salary")]
     public void CreateEmployee_ConstructInternalEmployee_SalaryMustBeBetween2500And3500()
     {
         // Act
@@ -36,6 +38,7 @@ public class EmployeeFactoryTests : IDisposable
     }
 
     [Fact]
+    [Trait("Category", "EmployeeFactory_CreateEmployee_Salary")]
     public void CreateEmployee_ConstructInternalEmployee_SalaryMustBeBetween2500And3500_Alternative()
     {
         // Act
@@ -47,6 +50,7 @@ public class EmployeeFactoryTests : IDisposable
     }
 
     [Fact]
+    [Trait("Category", "EmployeeFactory_CreateEmployee_Salary")]
     public void CreateEmployee_ConstructInternalEmployee_SalaryMustBeBetween2500And3500_AlternativeWithInRange()
     {
         // Act
@@ -57,6 +61,7 @@ public class EmployeeFactoryTests : IDisposable
     }
 
     [Fact]
+    [Trait("Category", "EmployeeFactory_CreateEmployee_Salary")]
     public void CreateEmployee_ConstructInternalEmployee_SalaryMustBe2500_PrecisionExample()
     {
         // Act
@@ -68,6 +73,7 @@ public class EmployeeFactoryTests : IDisposable
     }
 
     [Fact]
+    [Trait("Category", "EmployeeFactory_CreateEmployee_ReturnType")]
     public void CreateEmployee_IsExternalIsTrue_ReturnTypeMustBeExternalEmployee()
     {
         var employee = _employeeFactory.CreateEmployee("Kevin", "Dockx", "Marvin", true);
