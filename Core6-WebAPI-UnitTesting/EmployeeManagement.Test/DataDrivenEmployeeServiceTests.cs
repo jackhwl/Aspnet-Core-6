@@ -1,5 +1,6 @@
 ﻿using EmployeeManagement.DataAccess.Entities;
 using EmployeeManagement.Test.Fixtures;
+using EmployeeManagement.Test.TestData;
 
 namespace EmployeeManagement.Test;
 [Collection("EmployeeServiceCollection")]
@@ -81,7 +82,8 @@ public class DataDrivenEmployeeServiceTests // : IClassFixture<EmployeeServiceFi
     }
 
     [Theory]
-    [MemberData(nameof(ExampleTestDataForGiveRaise_WithMethod), 1, MemberType = typeof(DataDrivenEmployeeServiceTests))]
+    //[MemberData(nameof(ExampleTestDataForGiveRaise_WithMethod), 1, MemberType = typeof(DataDrivenEmployeeServiceTests))]
+    [ClassData(typeof(EmployeeServiceTestData))]
     public async Task GiveRaise_MoreThanMinimumRaiseGiven_EmployeeMinimumRaiseGivenMatchesValue(int raiseGiven, bool expectedValueForMinimumRaiseGiven)
     {
         // Arrange  
