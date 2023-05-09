@@ -95,7 +95,8 @@ public class DataDrivenEmployeeServiceTests // : IClassFixture<EmployeeServiceFi
     //[MemberData(nameof(ExampleTestDataForGiveRaise_WithMethod), 1, MemberType = typeof(DataDrivenEmployeeServiceTests))]
     //[ClassData(typeof(EmployeeServiceTestData))]
     //[ClassData(typeof(StronglyTypeEmployeeServiceTestData))]
-    [MemberData(nameof(StronglyTypesExampleTestDataForGiveRaise_WithProperty))]
+    //[MemberData(nameof(StronglyTypesExampleTestDataForGiveRaise_WithProperty))]
+    [ClassData(typeof(StronglyTypedEmployeeServiceTestData_FromFile))]
     public async Task GiveRaise_MoreThanMinimumRaiseGiven_EmployeeMinimumRaiseGivenMatchesValue(int raiseGiven, bool expectedValueForMinimumRaiseGiven)
     {
         // Arrange  
