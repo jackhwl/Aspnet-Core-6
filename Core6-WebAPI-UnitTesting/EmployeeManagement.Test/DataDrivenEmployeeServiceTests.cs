@@ -56,4 +56,43 @@ public class DataDrivenEmployeeServiceTests // : IClassFixture<EmployeeServiceFi
         // Assert
         Assert.False(internalEmployee.MinimumRaiseGiven);
     }
+
+    public static IEnumerable<object[]> ExampleTestDataForGiveRaise_WithProperty
+    {
+        get
+        {
+            return new List<object[]>
+            {
+                new object[] {100, true },
+                new object[] {200, false}
+            };
+        }
+    }
+
+    public static IEnumerable<object[]> ExampleTestDataForGiveRaise_WithMethod(int testDataInstancesToProvice)
+    {
+        var testData = new List<object[]>
+        {
+            new object[] {100, true },
+            new object[] {200, false}
+        };
+
+        return testData.Take(testDataInstancesToProvice);
+    }
+
+    [Theory]
+    [MemberData(nameof(ExampleTestDataForGiveRaise_WithMethod), 1, MemberType = typeof(DataDrivenEmployeeServiceTests))]
+    public async Task GiveRaise_MoreThanMinimumRaiseGiven_EmployeeMinimumRaiseGivenMatchesValue(int raiseGiven, bool expectedValueForMinimumRaiseGiven)
+    {
+        // Arrange  
+        var internalEmployee = new InternalEmployee(
+            "Brooklyn", "Cannon", 5, 3000, false, 1);
+
+        // Act 
+        await _employeeServiceFixture.EmployeeService
+            .GiveRaiseAsync(internalEmployee, raiseGiven);
+
+        // Assert
+        Assert.Equal(expectedValueForMinimumRaiseGiven, internalEmployee.MinimumRaiseGiven);
+    }
 }
