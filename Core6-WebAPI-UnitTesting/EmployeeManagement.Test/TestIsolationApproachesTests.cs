@@ -50,4 +50,15 @@ public class TestIsolationApproachesTests
         Assert.Equal(expectedSuggestedBonus, internalEmployee.SuggestedBonus);
     }
 
+    [Fact]
+    public async Task PromoteInternalEmployeeAsync_IsEligible_JobLevelMustBeIncreased()
+    {
+        var httpClient = new HttpClient(new TestablePromotionEligibilityHandler(true));
+        var internalEmployee = new InternalEmployee("Brooklyn", "Cannon", 5, 3000, false, 1);
+        var promotionService = new PromotionService(httpClient, new EmployeeManagementTestDataRepository());
+
+        await promotionService.PromoteInternalEmployeeAsync(internalEmployee);
+
+        Assert.Equal(2, internalEmployee.JobLevel);
+    }
 }
