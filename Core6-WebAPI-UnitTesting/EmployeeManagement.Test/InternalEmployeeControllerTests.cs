@@ -42,4 +42,14 @@ public class InternalEmployeeControllerTests
 
         Assert.IsAssignableFrom<IEnumerable<Models.InternalEmployeeDto>>(((OkObjectResult)actionResult.Result).Value);
     }
+
+    [Fact]
+    public async Task GetInternalEmployees_GetAction_MustReturnNumberOfInputtedInternalEmployees()
+    {
+        var result = await _internalEmployeesController.GetInternalEmployees();
+
+        var actionResult = Assert.IsType<ActionResult<IEnumerable<Models.InternalEmployeeDto>>>(result);
+
+        Assert.Equal(3, ((IEnumerable<Models.InternalEmployeeDto>)((OkObjectResult)actionResult.Result).Value).Count());
+    }
 }
