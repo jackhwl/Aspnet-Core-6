@@ -1,5 +1,6 @@
 ﻿using AutoMapper; 
 using EmployeeManagement.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,18 @@ namespace EmployeeManagement.Controllers
         {
             var httpConnectionFeature = HttpContext.Features.Get<IHttpConnectionFeature>();
             return Ok(_mapper.Map<StatisticsDto>(httpConnectionFeature));
+        }
+
+        [HttpGet]
+        [Authorize]
+        public IActionResult GetProtectedInternalEmployees()
+        {
+            if (User.IsInRole("Admin"))
+            {
+                return RedirectToAction("GetInternalEmployees", "ProtectedInternalEmployees");
+            }
+
+            return RedirectToAction("GetInternalEmployees", "InternalEmployees");
         }
     }
 }
