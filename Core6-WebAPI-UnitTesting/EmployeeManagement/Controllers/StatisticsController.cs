@@ -1,4 +1,5 @@
-﻿using AutoMapper; 
+﻿using AutoMapper;
+using EmployeeManagement.ActionFilters;
 using EmployeeManagement.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.Features;
@@ -16,7 +17,8 @@ namespace EmployeeManagement.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet] 
+        [HttpGet]
+        [CheckShowStatisticsHeader]
         public ActionResult<StatisticsDto> GetStatistics()
         {
             var httpConnectionFeature = HttpContext.Features.Get<IHttpConnectionFeature>();
