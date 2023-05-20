@@ -9,3 +9,9 @@
 * az apim create --name WenlinAPI-APIM-CLI -g WenlinAPI-RG -l eastus --publisher-email wenlin.huang@aderant.com --publisher-name aderant
 * az apim show --name Wenlin-APIM --resource-group WenlinAPI-RG --query "{Name:name, Sku:sku.name}"
 * az apim api create --service-name Wenlin-APIM --resource-group WenlinAPI-RG --api-id MyApi --path '/myapi' --display-name 'My API'
+* Demo: Prevent Bypassing API Management
+```
+        <set-header name="SecurityToken" exists-action="override">
+            <value>pass1234</value>
+        </set-header>
+```
