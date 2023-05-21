@@ -16,3 +16,4 @@
         </set-header>
 ```
 * Demo: Save API Management Cofiguration in Git Repository
+* Demo: API Management Products and Subscriptions
