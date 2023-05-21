@@ -17,3 +17,5 @@
 ```
 * Demo: Save API Management Cofiguration in Git Repository
 * Demo: API Management Products and Subscriptions
+## Section 4: Enhancing APIs Using API Management Policies
+* Demo: Apploying API Calling Quotas
