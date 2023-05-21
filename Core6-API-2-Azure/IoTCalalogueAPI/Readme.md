@@ -20,3 +20,6 @@
 ## Section 4: Enhancing APIs Using API Management Policies
 * Demo: Apploying API Calling Quotas
 * Demo: Limitting API Caller IPs
+* Demo: Changing API Response Type from JSON to XML
+* Demo: Checking HTTP Request Headers
+* Demo: Mock API Response
