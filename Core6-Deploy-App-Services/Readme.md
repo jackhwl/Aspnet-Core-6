@@ -3,3 +3,4 @@
 * Create Sample Project
 * Publish from Visual Studio
 * Importing the Publish Profile from App Service
+* Publish Using Zip Deploy
