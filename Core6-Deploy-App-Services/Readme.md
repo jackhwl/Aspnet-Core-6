@@ -5,3 +5,4 @@
 * Importing the Publish Profile from App Service
 * Publish Using Zip Deploy
 * Mount Zip File Using 'Run From Package'
+* Publish Using FTP
