@@ -4,3 +4,4 @@
 * Publish from Visual Studio
 * Importing the Publish Profile from App Service
 * Publish Using Zip Deploy
+* Mount Zip File Using 'Run From Package'
