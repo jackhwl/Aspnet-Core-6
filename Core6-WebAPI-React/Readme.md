@@ -7,3 +7,11 @@ npx create-react-app@5 reactweb --template typescript
 dotnet new webapi -minimal
 dotnet run
 ```
+## Section 3: Exposing, Getting, and Displaying Data
+* API: Creating a Database
+```
+dotnet add package Microsoft.EntityFrameworkCore.Sqllite --version 6.*
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.*
+dotnet ef migrations add initial
+dotnet ef database update
+```
