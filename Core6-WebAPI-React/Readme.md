@@ -16,3 +16,4 @@ dotnet ef migrations add initial
 dotnet ef database update
 ```
 * API: Adding Data Endpoints
+* API: Separating Concerns
