@@ -15,3 +15,4 @@ dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.*
 dotnet ef migrations add initial
 dotnet ef database update
 ```
+* API: Adding Data Endpoints
