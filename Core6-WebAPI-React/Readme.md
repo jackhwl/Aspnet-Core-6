@@ -17,3 +17,4 @@ dotnet ef database update
 ```
 * API: Adding Data Endpoints
 * API: Separating Concerns
+* React: Consuming Endpoints
