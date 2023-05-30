@@ -19,3 +19,4 @@ dotnet ef database update
 * API: Separating Concerns
 * React: Consuming Endpoints
 * React: Custom Hooks and useEffect
+* React: Caching and Re-fetch with react-query
