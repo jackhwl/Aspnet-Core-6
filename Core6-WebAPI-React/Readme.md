@@ -20,3 +20,4 @@ dotnet ef database update
 * React: Consuming Endpoints
 * React: Custom Hooks and useEffect
 * React: Caching and Re-fetch with react-query
+* React: Formatting Incoming Data and displaying API Status Information
