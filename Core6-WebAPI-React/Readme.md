@@ -25,3 +25,4 @@ dotnet ef database update
 * API: Details Endpoint
 * React: Setting up Routing
 * * npm i react-router-dom@6 @types/react-router-dom
+* React: Details Component
