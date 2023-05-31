@@ -26,3 +26,4 @@ dotnet ef database update
 * React: Setting up Routing
 * * npm i react-router-dom@6 @types/react-router-dom
 * React: Details Component
+* React: Navigation
