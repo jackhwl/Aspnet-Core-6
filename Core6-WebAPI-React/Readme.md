@@ -23,3 +23,5 @@ dotnet ef database update
 * React: Formatting Incoming Data and displaying API Status Information
 ## Section 4: Adding Frontend Routing and Navigation
 * API: Details Endpoint
+* React: Setting up Routing
+* * npm i react-router-dom@6 @types/react-router-dom
