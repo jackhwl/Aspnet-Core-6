@@ -27,3 +27,5 @@ dotnet ef database update
 * * npm i react-router-dom@6 @types/react-router-dom
 * React: Details Component
 * React: Navigation
+## Section 5: Creating， Updating，and Deleting Data
+* API: Create, Edit and Delete Endpoints
