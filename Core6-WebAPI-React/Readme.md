@@ -33,3 +33,5 @@ dotnet ef database update
 * React: useMutation and Cache Invalidation
 * React: Forms
 * React: Reusing Components
+*  dotnet add package minivalidation
+* API: Validation
