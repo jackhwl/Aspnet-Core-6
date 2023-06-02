@@ -31,3 +31,4 @@ dotnet ef database update
 * API: Create, Edit and Delete Endpoints
 * API: Database Persistance
 * React: useMutation and Cache Invalidation
+* React: Forms
