@@ -36,3 +36,4 @@ dotnet ef database update
 *  dotnet add package minivalidation
 * API: Validation
 * React: Displaying Validation Errors
+* React: Uploading Images
