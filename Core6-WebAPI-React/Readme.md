@@ -30,3 +30,4 @@ dotnet ef database update
 ## Section 5: Creating， Updating，and Deleting Data
 * API: Create, Edit and Delete Endpoints
 * API: Database Persistance
+* React: useMutation and Cache Invalidation
