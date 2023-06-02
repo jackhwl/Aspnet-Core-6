@@ -35,3 +35,4 @@ dotnet ef database update
 * React: Reusing Components
 *  dotnet add package minivalidation
 * API: Validation
+* React: Displaying Validation Errors
