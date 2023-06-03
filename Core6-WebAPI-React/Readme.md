@@ -37,3 +37,7 @@ dotnet ef database update
 * API: Validation
 * React: Displaying Validation Errors
 * React: Uploading Images
+## Section 6: Working with Related Data
+* API: Adding an Entity
+* dotnet ef migrations add bids
+* dotnet ef database update
