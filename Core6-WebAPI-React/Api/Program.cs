@@ -23,7 +23,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
-app.UseAuthenticaton();
+// app.UseAuthenticaton();
 
 // app.UseCors(p => p.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
 
@@ -32,8 +32,8 @@ app.UseHttpsRedirection();
 app.MapHouseEndpoints();
 app.MapBidEndpoints();
 app.UseRouting();
-app.UseAuthorization();
-app.UseEndpoints(e => e.MapDefaultControllerRoute());
+// app.UseAuthorization();
+// app.UseEndpoints(e => e.MapDefaultControllerRoute());
 app.MapFallbackToFile("index.html");
 
 app.Run();
