@@ -49,3 +49,4 @@ dotnet ef database update
 * API and React: Deployment
 * npm run build / dotnet publish
 * Hosting the React Application Inside the ASP.NET Core Project
+* API: Implementing Cookie Authentication
