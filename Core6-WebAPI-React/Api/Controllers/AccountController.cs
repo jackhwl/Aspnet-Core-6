@@ -1,14 +1,13 @@
 using System.Security.Claims;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using ConfArch.Web.Models;
+
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ConfArch.Web.Controllers
-{
+
     public class AccountController : Controller
     {
         private readonly IUserRepository userRepository;
@@ -61,4 +60,3 @@ namespace ConfArch.Web.Controllers
             return new JsonResult(User.Claims.Select(c => new { Type=c.Type, Value=c.Value }));
         }
     }
-}
