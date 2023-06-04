@@ -42,3 +42,4 @@ dotnet ef database update
 * dotnet ef migrations add bids
 * dotnet ef database update
 * API: New Repository
+* API: Extra Endpoints
