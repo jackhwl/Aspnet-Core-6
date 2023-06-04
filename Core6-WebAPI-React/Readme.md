@@ -45,3 +45,7 @@ dotnet ef database update
 * API: Extra Endpoints
 * React: Adding Hooks
 * React: Displaying and Adding Data in One Component
+## Deployment, Authentication, and Authorization
+* API and React: Deployment
+* npm run build / dotnet publish
+* Hosting the React Application Inside the ASP.NET Core Project

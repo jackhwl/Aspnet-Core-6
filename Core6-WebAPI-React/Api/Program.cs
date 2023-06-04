@@ -22,11 +22,18 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors(p => p.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
+app.UseStaticFiles();
+app.UseAuthenticaton();
+
+// app.UseCors(p => p.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
 
 app.UseHttpsRedirection();
 
 app.MapHouseEndpoints();
 app.MapBidEndpoints();
+app.UseRouting();
+app.UseAuthorization();
+app.UseEndpoints(e => e.MapDefaultControllerRoute());
+app.MapFallbackToFile("index.html");
 
 app.Run();
