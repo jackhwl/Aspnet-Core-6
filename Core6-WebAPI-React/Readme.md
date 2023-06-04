@@ -43,3 +43,5 @@ dotnet ef database update
 * dotnet ef database update
 * API: New Repository
 * API: Extra Endpoints
+* React: Adding Hooks
+* React: Displaying and Adding Data in One Component

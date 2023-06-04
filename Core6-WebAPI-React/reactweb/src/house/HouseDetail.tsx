@@ -4,6 +4,7 @@ import { useDeleteHouse, useFetchHouse } from "../hooks/HouseHooks";
 import { currencyFormatter } from "../config";
 import defaultImage from "./defaultPhoto";
 import { Link } from "react-router-dom";
+import Bids from "../bids/Bids";
 
 const HouseDetail = () => {
   const { id } = useParams();
@@ -64,6 +65,7 @@ const HouseDetail = () => {
         <div className="row">
           <div className="col-12 mt-3">{data.description}</div>
         </div>
+        <Bids house={data} />
       </div>
     </div>
   );
