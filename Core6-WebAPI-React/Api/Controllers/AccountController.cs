@@ -1,7 +1,6 @@
 using System.Security.Claims;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using ConfArch.Data.Repositories;
 using ConfArch.Web.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;

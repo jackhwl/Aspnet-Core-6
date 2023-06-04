@@ -2,8 +2,7 @@ using System;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace ConfArch.Data
-{
+
     public static class StringExtensions
     {
         public static string Sha256(this string input)
@@ -17,4 +16,3 @@ namespace ConfArch.Data
             }
         }
     }
-}
