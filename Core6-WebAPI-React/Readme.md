@@ -50,3 +50,4 @@ dotnet ef database update
 * npm run build / dotnet publish
 * Hosting the React Application Inside the ASP.NET Core Project
 * API: Implementing Cookie Authentication
+* React: Supporting Cookie Authentication
