@@ -4,3 +4,4 @@
 * Restricting Access with the Authorize Attribute
 * Adding a Login Page
 * Signing In
+* The Identity Cookie and Accessing User Claims
