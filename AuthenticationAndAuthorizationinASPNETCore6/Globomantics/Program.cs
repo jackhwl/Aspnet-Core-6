@@ -1,10 +1,11 @@
 using Globomantics.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(); //o => o.Filters.Add(new AuthorizeFilter())
 builder.Services.AddRazorPages();
 
 builder.Services.AddSingleton<IConferenceRepository, ConferenceRepository>();
