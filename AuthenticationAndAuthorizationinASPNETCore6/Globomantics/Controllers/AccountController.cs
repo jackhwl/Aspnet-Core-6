@@ -29,7 +29,19 @@ public class AccountController : Controller
         if (user == null)
             return Unauthorized();
 
-        await HttpContext.SignInAsync();
+        var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.Name, user.Name),
+            new Claim(ClaimTypes.Role, user.Role),
+            new Claim("FavoriteColor", user.FavoriteColor)
+        };
+
+        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+        var principal = new ClaimsPrincipal(identity);
+
+        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal,
+            new AuthenticationProperties { IsPersistent = model.RememberLogin });
 
         return LocalRedirect(model.ReturnUrl);
     }
