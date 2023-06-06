@@ -16,6 +16,7 @@ builder.Services.AddSingleton<IUserRepository, UserRepository>();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie();
+// (o => o.Cookie.SameSite = SameSiteMode.Strict)
 //(o => o.Events = new CookieAuthenticationEvents
 //    {
 //        OnValidatePrincipal = context =>
