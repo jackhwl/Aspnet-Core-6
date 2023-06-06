@@ -2,3 +2,4 @@
 ## Section 2: Authentication Basics
 * Adding Cookie Authentication
 * Restricting Access with the Authorize Attribute
+* Adding a Login Page
