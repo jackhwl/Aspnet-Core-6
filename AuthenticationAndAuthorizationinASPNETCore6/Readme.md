@@ -8,3 +8,4 @@
 * Same Site Cookies
 * Preparing for External Identity Providers
 * Scheme Actions and External Identity Providers
+* Claims Transformation
